@@ -1,0 +1,364 @@
+@font-face {
+  font-family: "AvantGardeGothicCTT";
+  src: url("../fonts/ofont.ru_AvantGardeGothicCTT.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvantGardeGothicCTTB";
+  src: url("../fonts/ofont.ru_AvantGardeGothicCTTB.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  font-display: swap;
+  src: url("../fonts/ofont.ru_Museo\ Sans\ Cyrl\ 500.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: opens;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "rd";
+  font-display: swap;
+  src: url("../fonts/RDK75__C.woff") format("woff");
+  font-style: normal;
+}
+
+.phone-block__order p {
+  max-width: 160px;
+  text-align: center;
+}
+
+.thanks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  background: url("../img/thanks/bg.png") 50% / cover no-repeat;
+}
+@media (max-width: 2560px) {
+  .thanks {
+    display: block;
+  }
+}
+.thanks__body {
+  padding: 160px 0 34px;
+  width: 1170px;
+  position: relative;
+}
+@media (max-width: 2645px) {
+	.thanks__body {
+	  width: auto;
+	}
+ }
+.thanks__title {
+  font-family: "rd";
+  font-size: 34px;
+  line-height: 36px;
+  text-transform: uppercase;
+  max-width: 660px;
+  margin-bottom: 20px;
+}
+.thanks__title .thanks-name {
+  font-size: 42px;
+  color: #e30613;
+}
+.thanks__descr {
+  font-size: 16px;
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+.thanks__box {
+  width: 635px;
+  margin-bottom: 16px;
+
+  background: #fff;
+}
+.thanks__box-top {
+  background: url("../img/thanks/rec.png") 50% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 12px 35px;
+}
+.thanks__box-title {
+  font-family: "AvantGardeGothicCTTB";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  color: #fff;
+  margin-right: 17px;
+}
+.thanks__box-text {
+  font-size: 16px;
+  line-height: 130%;
+  color: #fff;
+}
+.thanks__box-bottom {
+  border: 2px solid #e30613;
+  border-top: none;
+  padding: 15px 80px 15px 35px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thanks__box-descr {
+  max-width: 295px;
+  position: relative;
+}
+.thanks__box-descr::after {
+  content: "";
+  height: 56px;
+  width: 1px;
+  background: #e30613;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -60px;
+}
+.thanks__subscribe {
+  width: 635px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+.thanks__intro {
+  width: 635px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+.thanks__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.thanks__content-left {
+  margin-right: 75px;
+}
+.thanks__content-web {
+  margin-bottom: 8px;
+  line-height: 130%;
+}
+.thanks__content-web-link {
+  display: block;
+  margin-bottom: 16px;
+}
+.thanks__content-about {
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+.thanks__content-socials {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.thanks__content-socials > *:not(:last-child) {
+  margin-right: 40px;
+}
+.thanks__content-feedback {
+  display: flex;
+  align-items: center;
+}
+.thanks__content-geo {
+  margin-right: 8px;
+}
+.thanks__video-button {
+  left: 28.5%;
+}
+.thanks__video-btn {
+  max-width: 88px;
+}
+.thanks__subtitle {
+  font-family: "rd";
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #e30613;
+}
+.thanks__owner {
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+}
+.owner-block {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+
+  width: 350px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.owner-top {
+  font-family: "AvantGardeGothicCTTB";
+  padding: 12.5px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  background: #e30613;
+  color: #fff;
+}
+.owner-bottom {
+	padding: 10px 0;
+  text-align: center;
+  line-height: 130%;
+  background: #fff;
+}
+@media (max-width: 1088px) {
+	.owner-image{
+		max-width: 420px;
+	}
+}
+@media (max-width: 1023px) {
+	.thanks__owner{
+		position: static;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	.owner-image{
+		max-width: 320px;
+	}
+	.owner-block {
+		bottom: 85px;
+		width: 335px;
+		left: 50%;
+		transform: translateX(-50%);
+  }
+  .thanks__title{
+	margin: 0 auto 25px;
+	text-align: center;
+  }
+  .thanks__descr{
+	text-align: center;
+  }
+  .thanks__box{
+	margin: 0 auto 15px;
+  }
+  .thanks__subscribe{
+	text-align: center;
+	margin: 0 auto 16px;
+  }
+  .thanks__intro{
+	text-align: center;
+	margin: 0 auto 16px;
+  }
+  .thanks__content{
+	justify-content: center;
+  }
+  .thanks__subtitle{
+	text-align: center;
+  }
+}
+@media (max-width: 767px) {
+	.thanks__title {
+		font-size: 26px;
+  }
+  .thanks__title .thanks-name{
+	font-size: 32px;
+  }
+  .thanks__box-top {
+	background: url("../img/thanks/rec.png") 70% / cover no-repeat;
+	padding: 12px 25px;
+}
+.thanks__box{
+	max-width: 569px;
+}
+.thanks__box-bottom {
+	padding: 15px 35px;
+}
+.thanks__subscribe {
+	width: 570px;
+}
+.thanks__intro{
+	width: 570px;
+}
+.thanks__content-left {
+	margin-right: 30px;
+}
+}
+@media (max-width: 600px) {
+	.thanks__body {
+		padding: 120px 0 35px;
+  }
+  .thanks__title {
+	font-size: 20px;
+	line-height: 120%;
+}
+.thanks__title .thanks-name {
+	font-size: 26px;
+}
+.thanks__box{
+	max-width: 270px;
+	flex-direction: column;
+}
+.thanks__box-title {
+	font-size: 18px;
+	margin-right: 10px;
+}
+.thanks__box-top {
+	padding: 12px 10px;
+}
+.thanks__box-bottom {
+	padding: 15px 10px;
+	flex-direction: column;
+}
+.thanks__box-descr{
+	text-align: center;
+	font-size: 14px;
+}
+.thanks__box-descr::after{
+	content: none;
+}
+.thanks__subscribe{
+	max-width: 270px;
+}
+.thanks__intro{
+	max-width: 270px;
+	font-size: 18px;
+}
+.thanks__content{
+	flex-direction: column;
+}
+.thanks__content-left{
+	margin-right: 0;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.thanks__video-button {
+	left: 29.5%;
+}
+.owner-image {
+	max-width: 250px;
+}
+.owner-block {
+	width: 270px;
+	bottom: 100px;
+}
+.owner-top{
+	font-size: 18px;
+}
+.owner-bottom{
+	font-size: 14px;
+}
+.thanks__subtitle{
+	font-size: 18px;
+}
+}
