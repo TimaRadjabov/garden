@@ -55,6 +55,9 @@
     left: 0;
 
     display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slick-track:before,
 .slick-track:after
@@ -115,24 +118,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.slick-dots {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 20px auto 0;
- }
- .slick-dots >:not(:last-child){
-	margin-right: 5px;
- }
- .slick-dots li button {
-	width: 14px;
-	height: 14px;
-	text-indent: -9999px;
-	overflow: hidden;
-	display: flex;
-	border-radius: 50%;
- }
- 
- .slick-dots .slick-active button {
-	background: #e30613;
- }
