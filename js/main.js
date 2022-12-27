@@ -346,8 +346,8 @@ $(".fourth__slider").slick({
 });
 
 // Tab
-const tabItemAdaptive = document.querySelectorAll(".learning__tab");
-const tabContentAdaptive = document.querySelectorAll(".learning__item-content");
+/* const tabItemAdaptive = document.querySelectorAll(".fifth__tab");
+const tabContentAdaptive = document.querySelectorAll(".fifth__content");
 
 function tabChangerAdaptive(item, content) {
   item.forEach((tab, index) => {
@@ -357,4 +357,27 @@ function tabChangerAdaptive(item, content) {
     });
   });
 }
-tabChangerAdaptive(tabItemAdaptive, tabContentAdaptive);
+tabChangerAdaptive(tabItemAdaptive, tabContentAdaptive); */
+
+const tabItem = document.querySelectorAll(".fifth__tab");
+const tabContent = document.querySelectorAll(".fifth__content");
+
+function tabChanger(item, content) {
+	item.forEach((tab, index) => {
+	   tab.addEventListener('click', function(){
+		  content.forEach(content => {
+			 content.classList.remove('active');
+		  })
+		  item.forEach(tab => {
+			 tab.classList.remove('active');
+		  })
+		
+		  
+		  content[index].classList.add('active');
+		  item[index].classList.add('active'); 
+		 
+		  
+	   })
+	})
+ }
+ tabChanger(tabItem, tabContent);
