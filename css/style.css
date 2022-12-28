@@ -2568,3 +2568,213 @@ body {
     margin-bottom: 15px;
   }
 }
+
+/* ==================================  ten  ================================ */
+
+.ten {
+  background: url("../img/ten/back.png") 50% / cover no-repeat;
+}
+.ten__body {
+  padding: 100px 0;
+}
+.ten__title {
+  text-align: center;
+  margin-bottom: 37px;
+  color: #fff;
+}
+.ten__descr {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.ten__content {
+  position: relative;
+}
+.ten__calc {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  max-width: 950px;
+  padding: 10px;
+}
+.ten__calc-inner {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='24' ry='24' stroke='rgb(233, 143, 134)' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='23' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 24px;
+  padding: 32px 50px;
+}
+.ten__calc-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.ten__calc-tab {
+  border: 3px solid #35b7b5;
+  border-radius: 16px;
+  width: 400px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #35b7b5;
+  cursor: pointer;
+}
+.ten__calc-tab.active {
+  background: linear-gradient(90deg, #65bc92 0%, #35b7b5 100%);
+  color: #fff;
+  border: none;
+}
+
+.ten__calc-content {
+  display: none;
+}
+.ten__calc-content.active {
+  display: block;
+}
+.ten__calc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.ten__calc-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 125%;
+  max-width: 400px;
+  color: #161615;
+}
+.ten__calc-price {
+  font-weight: 700;
+  font-size: 27.5px;
+  line-height: 125%;
+  text-align: right;
+  color: #006161;
+}
+.calc__calculator {
+  margin-top: 40px;
+}
+.ten__calc-garden {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.ten__calc-garden div {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 125%;
+  color: #161615;
+}
+.ten__calc-garden p {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  color: #006161;
+}
+.calc__calculator-range {
+  position: relative;
+}
+
+.range__input {
+  -webkit-appearance: none;
+  width: 830px;
+  height: 14px;
+  background: rgba(78, 77, 77, 0.205);
+  border-radius: 10px;
+  outline: none;
+  position: relative;
+  bottom: 1px;
+}
+.range__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #65bc92 0%, #35b7b5 100%);
+  border: 7.5px solid #ffffff;
+  outline: 3px solid #65bc92;
+  box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.range__input::-webkit-slider-thumb::after {
+  content: url("../img/ten/triangle.png");
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -30px;
+  left: 273px;
+}
+.tooltip {
+  display: flex;
+  color: #000;
+  pointer-events: none;
+  width: 830px;
+  margin-top: 7px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 22.5px;
+  line-height: 125%;
+  padding: 0 5px;
+}
+.tooltip >:nth-child(2){
+  margin-left: 16px;
+}
+.tooltip >:nth-child(3){
+  margin-left: 7px;
+}
+.ten__result {
+  position: absolute;
+  bottom: 17px;
+  right: 0px;
+}
+.ten__result-amount {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 75px;
+  line-height: 61%;
+  text-align: right;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+
+  position: absolute;
+  top: 185px;
+    left: 100px;
+}
+.ten__result-button {
+  width: 400px;
+  position: absolute;
+  bottom: 65px;
+  left: 25px;
+}
+
+.progress {
+  width: 830px;
+  height: 13px;
+  background: linear-gradient(90deg, #65bc92 0%, #35b7b5 100%);
+  border-radius: 10px;
+  position: absolute;
+  top: 3%;
+  left: 0%;
+  pointer-events: none;
+  z-index: 1;
+}
+.tooltip > .tooltip-value-02{
+  margin-left: 7px;
+}
+.tooltip > .tooltip-value-02{
+  margin-left: 5px;
+}
