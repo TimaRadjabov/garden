@@ -74,15 +74,64 @@ if ($("#main-body").length > 0) {
   let presentationBtn = document.querySelectorAll(".top-btn");
   let phoneBtn = document.querySelectorAll(".modal-phone");
   let politicyBtn = document.querySelectorAll(".politicy");
+  let firstBtn = document.querySelectorAll(".first-btn");
+  let secondBtn = document.querySelectorAll(".second-btn");
+  let thirdBtn = document.querySelectorAll(".third-btn");
+  let fourthBtn = document.querySelectorAll(".fourth-btn");
+  let fifthBtn = document.querySelectorAll(".fifth-btn");
+  let sixthBtn = document.querySelectorAll(".sixth-btn");
+  let seventhBtn = document.querySelectorAll(".seventh-btn");
 
   let popupPresentation = document.querySelector(".popup-franchising");
   let popupPhone = document.querySelector(".popup-phone");
   let popupPoliticy = document.querySelector(".popup-politicy");
+  let popupFirst = document.querySelector(".first-presentation");
+  let popupSecond = document.querySelector(".second-presentation");
+  let popupThird = document.querySelector(".third-presentation");
+  let popupFourth = document.querySelector(".fourth-presentation");
+  let popupFifth = document.querySelector(".fifth-presentation");
+  let popupSixth = document.querySelector(".sixth-presentation");
+  let popupSeventh = document.querySelector(".seventh-presentation");
   let body = document.querySelector("body");
 
   presentationBtn.forEach((item) => {
     item.addEventListener("click", () => {
       presentation();
+    });
+  });
+  firstBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+      presentationFirst();
+    });
+  });
+  secondBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+      presentationSecond();
+    });
+  });
+  thirdBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+      presentationThird();
+    });
+  });
+  fourthBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+      presentationFourth();
+    });
+  });
+  fifthBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+      presentationFifth();
+    });
+  });
+  sixthBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+      presentationSixth();
+    });
+  });
+  seventhBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+      presentationSeventh();
     });
   });
 
@@ -95,6 +144,104 @@ if ($("#main-body").length > 0) {
       body.addEventListener("keydown", function (e) {
         if (e.keyCode === 27) {
           popupPresentation.classList.remove("is-active");
+          bodyUnlock();
+        }
+      });
+    }
+  }
+  function presentationFirst() {
+    let popupFirst = document.querySelector(".first-presentation");
+    let body = document.querySelector("body");
+    popupFirst.classList.add("is-active");
+    bodyLock();
+    if (popupFirst.classList.contains("is-active")) {
+      body.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popupFirst.classList.remove("is-active");
+          bodyUnlock();
+        }
+      });
+    }
+  }
+  function presentationSecond() {
+    let popupSecond = document.querySelector(".second-presentation");
+    let body = document.querySelector("body");
+    popupSecond.classList.add("is-active");
+    bodyLock();
+    if (popupSecond.classList.contains("is-active")) {
+      body.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popupSecond.classList.remove("is-active");
+          bodyUnlock();
+        }
+      });
+    }
+  }
+  function presentationThird() {
+    let popupThird = document.querySelector(".third-presentation");
+    let body = document.querySelector("body");
+    popupThird.classList.add("is-active");
+    bodyLock();
+    if (popupThird.classList.contains("is-active")) {
+      body.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popupThird.classList.remove("is-active");
+          bodyUnlock();
+        }
+      });
+    }
+  }
+  function presentationFourth() {
+    let popupFourth = document.querySelector(".fourth-presentation");
+    let body = document.querySelector("body");
+    popupFourth.classList.add("is-active");
+    bodyLock();
+    if (popupFourth.classList.contains("is-active")) {
+      body.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popupFourth.classList.remove("is-active");
+          bodyUnlock();
+        }
+      });
+    }
+  }
+  function presentationFifth() {
+    let popupFifth = document.querySelector(".fifth-presentation");
+    let body = document.querySelector("body");
+    popupFifth.classList.add("is-active");
+    bodyLock();
+    if (popupFifth.classList.contains("is-active")) {
+      body.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popupFifth.classList.remove("is-active");
+          bodyUnlock();
+        }
+      });
+    }
+  }
+  function presentationSixth() {
+    let popupSixth = document.querySelector(".sixth-presentation");
+    let body = document.querySelector("body");
+    popupSixth.classList.add("is-active");
+    bodyLock();
+    if (popupSixth.classList.contains("is-active")) {
+      body.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popupSixth.classList.remove("is-active");
+          bodyUnlock();
+        }
+      });
+    }
+  }
+  function presentationSeventh() {
+    let popupSeventh = document.querySelector(".seventh-presentation");
+    let body = document.querySelector("body");
+    popupSeventh.classList.add("is-active");
+    bodyLock();
+    if (popupSeventh.classList.contains("is-active")) {
+      body.addEventListener("keydown", function (e) {
+        if (e.keyCode === 27) {
+          popupSeventh.classList.remove("is-active");
           bodyUnlock();
         }
       });
@@ -152,6 +299,13 @@ if ($("#main-body").length > 0) {
       popupPresentation.classList.remove("is-active");
       popupPoliticy.classList.remove("is-active");
       popupPhone.classList.remove("is-active");
+      popupFirst.classList.remove("is-active");
+      popupSecond.classList.remove("is-active");
+      popupThird.classList.remove("is-active");
+      popupFourth.classList.remove("is-active");
+      popupFifth.classList.remove("is-active");
+      popupSixth.classList.remove("is-active");
+      popupSeventh.classList.remove("is-active");
       bodyUnlock();
     }
   });
@@ -283,9 +437,9 @@ if ($("#thanks-body").length > 0) {
   let thanksName = document.querySelector(".thanks-name");
   let the_title = document.querySelector("title");
   let nameValue = localStorage.getItem("lpg3746_name");
-  let cityName = document.querySelector(".thanks-city");
+/*   let cityName = document.querySelector(".thanks-city");
 
-  cityName.innerHTML = localStorage.getItem("lpg3746_city");
+  cityName.innerHTML = localStorage.getItem("lpg3746_city"); */
   if (nameValue == " ") {
     thanksName.innerHTML = localStorage.getItem("lpg3746_name");
     the_title.innerHTML = "Cпасибо, Ваша заявка принята 👍";
@@ -397,8 +551,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const progressFive = document.querySelector(".point05");
   const progressSix = document.querySelector(".point06");
   const screenWidth = window.screen.width;
-  const resultOne = document.querySelector(".result");
-  const resultTwo = document.querySelector(".result02");
   const calcResult = document.querySelector(".result-calc");
   const tabItemThree = document.querySelectorAll(".ten__calc-tab");
 
@@ -410,7 +562,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const labelValue06 = document.querySelector(".input-value06");
 
   const firstInt = ["5", "10", "15", "20", "25", "30", "35", "40", "45", "50"];
-  const secondInt = ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"];
+  const secondInt = [
+    "10",
+    "20",
+    "30",
+    "40",
+    "50",
+    "60",
+    "70",
+    "80",
+    "90",
+    "100",
+  ];
   function customSlider(
     one,
     two,
@@ -418,7 +581,6 @@ document.addEventListener("DOMContentLoaded", () => {
     progress,
     progress02,
     progress03,
-    result01,
     calcResult,
     label01,
     label02,
@@ -430,7 +592,7 @@ document.addEventListener("DOMContentLoaded", () => {
     label03.innerHTML = three.value;
     if (matchMedia) {
       let arrs = [
-        window.matchMedia("(max-width: 1082px) and (min-width: 601px)"),
+        window.matchMedia("(max-width: 1023px) and (min-width: 601px)"),
         window.matchMedia("(max-width: 600px)"),
       ];
       function working(arr) {
@@ -466,204 +628,78 @@ document.addEventListener("DOMContentLoaded", () => {
             progress.style.width = 830 + "px";
           }
         }
+        function getTooltipAdaptive(input, progress) {
+          if (input.value === int[0]) {
+            progress.style.width = 10 + "px";
+          }
+          if (input.value === int[1]) {
+            progress.style.width = 60 + "px";
+          }
+          if (input.value === int[2]) {
+            progress.style.width = 150 + "px";
+          }
+          if (input.value === int[3]) {
+            progress.style.width = 200 + "px";
+          }
+          if (input.value === int[4]) {
+            progress.style.width = 220 + "px";
+          }
+          if (input.value === int[5]) {
+            progress.style.width = 280 + "px";
+          }
+          if (input.value === int[6]) {
+            progress.style.width = 240 + "px";
+          }
+          if (input.value === int[7]) {
+            progress.style.width = 420 + "px";
+          }
+          if (input.value === int[8]) {
+            progress.style.width = 450 + "px";
+          }
+          if (input.value === int[9]) {
+            progress.style.width = 500 + "px";
+          }
+        }
+        function getTooltipPhone(input, progress) {
+          if (input.value === int[0]) {
+            progress.style.width = 10 + "px";
+          }
+          if (input.value === int[1]) {
+            progress.style.width = 30 + "px";
+          }
+          if (input.value === int[2]) {
+            progress.style.width = 60 + "px";
+          }
+          if (input.value === int[3]) {
+            progress.style.width = 80 + "px";
+          }
+          if (input.value === int[4]) {
+            progress.style.width = 110 + "px";
+          }
+          if (input.value === int[5]) {
+            progress.style.width = 135 + "px";
+          }
+          if (input.value === int[6]) {
+            progress.style.width = 160 + "px";
+          }
+          if (input.value === int[7]) {
+            progress.style.width = 190 + "px";
+          }
+          if (input.value === int[8]) {
+            progress.style.width = 220 + "px";
+          }
+          if (input.value === int[9]) {
+            progress.style.width = 240 + "px";
+          }
+        }
         if (arrs[0].matches) {
-          if (one.value === "2000") {
-            progress.style.width = one.value - 2000 + "px";
-          }
-          if (one.value === "2100") {
-            progress.style.width = one.value - 2025 + "px";
-          }
-          if (one.value === "2200") {
-            progress.style.width = one.value - 2070 + "px";
-          }
-          if (one.value === "2300") {
-            progress.style.width = one.value - 2120 + "px";
-          }
-          if (one.value === "2400") {
-            progress.style.width = one.value - 2170 + "px";
-          }
-          if (one.value === "2500") {
-            progress.style.width = one.value - 2220 + "px";
-          }
-          if (one.value === "2600") {
-            progress.style.width = one.value - 2270 + "px";
-          }
-          if (one.value === "2700") {
-            progress.style.width = one.value - 2310 + "px";
-          }
-          if (one.value === "2800") {
-            progress.style.width = one.value - 2360 + "px";
-          }
-          if (one.value === "2900") {
-            progress.style.width = one.value - 2400 + "px";
-          }
-          if (one.value === "3000") {
-            progress.style.width = one.value - 2450 + "px";
-          }
-
-          if (one.value === "1750") {
-            progress.style.width = one.value - 1750 + "px";
-          }
-          if (one.value === "1850") {
-            progress.style.width = one.value - 1770 + "px";
-          }
-          if (one.value === "1950") {
-            progress.style.width = one.value - 1825 + "px";
-          }
-          if (one.value === "2050") {
-            progress.style.width = one.value - 1870 + "px";
-          }
-          if (one.value === "2150") {
-            progress.style.width = one.value - 1920 + "px";
-          }
-          if (one.value === "2250") {
-            progress.style.width = one.value - 1960 + "px";
-          }
-          if (one.value === "2350") {
-            progress.style.width = one.value - 2020 + "px";
-          }
-          if (one.value === "2450") {
-            progress.style.width = one.value - 2065 + "px";
-          }
-          if (one.value === "2550") {
-            progress.style.width = one.value - 2115 + "px";
-          }
-          if (one.value === "2650") {
-            progress.style.width = one.value - 2160 + "px";
-          }
-          if (one.value === "2750") {
-            progress.style.width = one.value - 2210 + "px";
-          }
-
-          if (two.value === "0") {
-            progress02.style.width = two.value + 0 + "px";
-          }
-          if (two.value === "3") {
-            progress02.style.width = 88 - two.value + "px";
-          }
-          if (two.value === "6") {
-            progress02.style.width = 146 - two.value + "px";
-          }
-          if (two.value === "9") {
-            progress02.style.width = 199 - two.value + "px";
-          }
-          if (two.value === "12") {
-            progress02.style.width = 262 - two.value + "px";
-          }
-          if (two.value === "15") {
-            progress02.style.width = 330 - two.value + "px";
-          }
-          if (two.value === "18") {
-            progress02.style.width = 388 - two.value + "px";
-          }
-          if (two.value === "21") {
-            progress02.style.width = 451 - two.value + "px";
-          }
-          if (two.value === "24") {
-            progress02.style.width = 504 - two.value + "px";
-          }
-          if (two.value === "27") {
-            progress02.style.width = 577 - two.value + "px";
-          }
+          getTooltipAdaptive(one, progress);
+          getTooltipAdaptive(two, progress02);
+          getTooltipAdaptive(three, progress03);
         } else if (arrs[1].matches) {
-          if (one.value === "2000") {
-            progress.style.width = one.value - 2000 + "px";
-          }
-          if (one.value === "2100") {
-            progress.style.width = one.value - 2065 + "px";
-          }
-          if (one.value === "2200") {
-            progress.style.width = one.value - 2135 + "px";
-          }
-          if (one.value === "2300") {
-            progress.style.width = one.value - 2215 + "px";
-          }
-          if (one.value === "2400") {
-            progress.style.width = one.value - 2290 + "px";
-          }
-          if (one.value === "2500") {
-            progress.style.width = one.value - 2360 + "px";
-          }
-          if (one.value === "2600") {
-            progress.style.width = one.value - 2440 + "px";
-          }
-          if (one.value === "2700") {
-            progress.style.width = one.value - 2515 + "px";
-          }
-          if (one.value === "2800") {
-            progress.style.width = one.value - 2590 + "px";
-          }
-          if (one.value === "2900") {
-            progress.style.width = one.value - 2670 + "px";
-          }
-          if (one.value === "3000") {
-            progress.style.width = one.value - 2740 + "px";
-          }
-
-          if (one.value === "1750") {
-            progress.style.width = one.value - 1750 + "px";
-          }
-          if (one.value === "1850") {
-            progress.style.width = one.value - 1815 + "px";
-          }
-          if (one.value === "1950") {
-            progress.style.width = one.value - 1885 + "px";
-          }
-          if (one.value === "2050") {
-            progress.style.width = one.value - 1960 + "px";
-          }
-          if (one.value === "2150") {
-            progress.style.width = one.value - 2040 + "px";
-          }
-          if (one.value === "2250") {
-            progress.style.width = one.value - 2110 + "px";
-          }
-          if (one.value === "2350") {
-            progress.style.width = one.value - 2190 + "px";
-          }
-          if (one.value === "2450") {
-            progress.style.width = one.value - 2265 + "px";
-          }
-          if (one.value === "2550") {
-            progress.style.width = one.value - 2345 + "px";
-          }
-          if (one.value === "2650") {
-            progress.style.width = one.value - 2415 + "px";
-          }
-          if (one.value === "2750") {
-            progress.style.width = one.value - 2490 + "px";
-          }
-
-          if (two.value === "0") {
-            progress02.style.width = two.value + 0 + "px";
-          }
-          if (two.value === "3") {
-            progress02.style.width = 43 - two.value + "px";
-          }
-          if (two.value === "6") {
-            progress02.style.width = 70 - two.value + "px";
-          }
-          if (two.value === "9") {
-            progress02.style.width = 105 - two.value + "px";
-          }
-          if (two.value === "12") {
-            progress02.style.width = 136 - two.value + "px";
-          }
-          if (two.value === "15") {
-            progress02.style.width = 165 - two.value + "px";
-          }
-          if (two.value === "18") {
-            progress02.style.width = 198 - two.value + "px";
-          }
-          if (two.value === "21") {
-            progress02.style.width = 226 - two.value + "px";
-          }
-          if (two.value === "24") {
-            progress02.style.width = 254 - two.value + "px";
-          }
-          if (two.value === "27") {
-            progress02.style.width = 282 - two.value + "px";
-          }
+          getTooltipPhone(one, progress);
+          getTooltipPhone(two, progress02);
+          getTooltipPhone(three, progress03);
         } else {
           getTooltip(one, progress);
           getTooltip(two, progress02);
@@ -677,9 +713,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const profit = new Intl.NumberFormat("ru-RU").format(
-      Math.round(one.value * two.value * 321 * 0.075)
+      Math.round(
+        (one.value * 27167 + two.value * 4000 + three.value * 1000) * 0.1968
+      )
     );
-    result01.innerHTML = profit + " рублей";
     calcResult.innerHTML = profit;
   }
   customSlider(
@@ -689,7 +726,6 @@ document.addEventListener("DOMContentLoaded", () => {
     progressOne,
     progressTwo,
     progressThree,
-    resultOne,
     calcResult,
     labelValue01,
     labelValue02,
@@ -707,7 +743,6 @@ document.addEventListener("DOMContentLoaded", () => {
           progressOne,
           progressTwo,
           progressThree,
-          resultOne,
           calcResult,
           labelValue01,
           labelValue02,
@@ -722,7 +757,6 @@ document.addEventListener("DOMContentLoaded", () => {
           progressFour,
           progressFive,
           progressSix,
-          resultTwo,
           calcResult,
           labelValue04,
           labelValue05,
@@ -742,7 +776,6 @@ document.addEventListener("DOMContentLoaded", () => {
         progressOne,
         progressTwo,
         progressThree,
-        resultOne,
         calcResult,
         labelValue01,
         labelValue02,
@@ -761,7 +794,6 @@ document.addEventListener("DOMContentLoaded", () => {
         progressFour,
         progressFive,
         progressSix,
-        resultTwo,
         calcResult,
         labelValue04,
         labelValue05,

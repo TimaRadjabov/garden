@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -18,26 +20,23 @@
   </head>
   <body id="thanks-body">
     <div class="wrapper">
-      <header class="header">
+      <header class="header thanks__header">
         <div class="container">
-          <div class="header__body">
+          <div class="header__body thanks__header-body">
             <div class="header__logo">
-					<a href="index.html"><img src="img/header/logo.png" alt="logo" /></a> 
+              <img src="img/header/logo.png" alt="logo" />
             </div>
-            <p class="header__descr">
-              Франшиза от&nbsp;сети, работающей на&nbsp;рынке
-              с&nbsp;2013&nbsp;года
-            </p>
+            <p class="header__descr">Бизнес в дошкольном образовании</p>
             <div class="header__phone phone-block">
               <div class="phone-block__icon">
                 <img src="img/header/phone.png" alt="icon" />
               </div>
               <div class="phone-block__link">
                 <div class="phone-block__number">
-                  <a href="tel:+79200500089">+7 930 715 20 20</a>
+                  <a href="tel:+79523702434">+7 (952) 370-24-34</a>
                 </div>
                 <div class="phone-block__order modal-phone">
-                  <p>позвоните сейчас, чтобы не ждать звонка</p>
+                  <p>Позвоните сейчас, чтобы не ждать звонка</p>
                 </div>
               </div>
             </div>
@@ -49,22 +48,24 @@
           <div class="thanks__body">
             <h1 class="thanks__title">
               <span class="thanks-name">ИМЯ,</span> благодарим вас за обращение
-              в компанию «ГЛАВЭЛЕКТРИКА»®
+              в компанию «Джунглики»®
             </h1>
             <p class="thanks__descr">
               Для обсуждения сотрудничества мы свяжемся с Вами в ближайшее
               время.
             </p>
             <div class="thanks__box">
-              <div class="thanks__box-top">
-                <div class="thanks__box-title">График работы:</div>
-                <p class="thanks__box-text">ежедневно</p>
-              </div>
-              <div class="thanks__box-bottom">
-                <div class="thanks__box-descr">
-                  По нашему местному (московскому) времени в г. Нижний Новгород:
+              <div class="thanks__box-item">
+                <p>График работы компании:</p>
+                <div class="thanks__box-date">
+                  <span>пн вт ср чт пт</span> сб вс
                 </div>
-                <div class="thanks__box-time">с 09:00 до 18:00</div>
+              </div>
+              <div class="thanks__box-item">
+                <p>
+                  По нашему местному (московскому) времени в г. Санкт-Петербург:
+                </p>
+                <div class="thanks__box-time">с 9:00 до 18:00</div>
               </div>
             </div>
             <div class="thanks__subscribe">
@@ -75,90 +76,50 @@
             <div class="thanks__intro">
               А пока ближе познакомьтесь с командой:
             </div>
-            <div class="thanks__content">
-              <div class="thanks__content-left">
-                <div class="thanks__content-web">Главный сайт бренда:</div>
-                <a
-                  href="https://xn--k1ajj4b.xn--p1ai/o-kompanii.html"
-                  target="_blank"
-                  class="thanks__content-web-link"
-                >
-                  <img src="img/thanks/web.png" alt="icon" />
-                </a>
-
-                <div class="thanks__content-about">
-                  О жизни проекта в соцсетях:
-                </div>
-                <div class="thanks__content-socials">
-                  <a
-                    href="https://vk.com/elektrika_magazin"
-                    target="_blank"
-                    class="thanks__content-social"
-                  >
-                    <img src="img/thanks/vk.png" alt="vk" />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UCYabp8RvrHaF_1GVqwgpsXg/videos"
-                    target="_blank"
-                    class="thanks__content-social"
-                  >
-                    <img src="img/thanks/youtube.png" alt="tube" />
-                  </a>
-                </div>
-                <div class="thanks__content-feedback">
-                  <img
-                    src="img/thanks/geo.png"
-                    alt="geo"
-                    class="thanks__content-geo"
-                  />
-                  <a
-                    href="https://yandex.ru/maps/org/glavelektrika/36387817948/?ll=44.031490%2C56.294806&z=16"
-                    target="_blank"
-                    class="thanks__content-starts"
-                  >
-                    <div class="thanks__content-yandex">Отзывы на Yandex</div>
-                    <img
-                      src="img/thanks/stars.png"
-                      alt="stars"
-                      class="thanks__content-start"
-                    />
+            <div class="thanks__socials">
+              <div class="thanks__social">
+                <div class="thanks__social-text">О жизни проекта в соц.сетях:</div>
+                <div class="thanks__social-link">
+                  <a href="https://vk.com/club188275211" target="_blank">
+                    <img src="img/thanks/vk.png" alt="vk">
                   </a>
                 </div>
               </div>
-              <div class="thanks__content-right">
-                <div class="thanks__video">
-                  <a
-                    data-fancybox
-                    href="https://youtu.be/hdN2ss-ow-U"
-                    data-width="1000"
-                    data-height="700"
-                  >
-                    <div class="look__video-block">
-                      <img src="./img/thanks/poster.png" alt="poster" />
-                      <div class="look__video-button thanks__video-button">
-                        <img
-                          src="img/look/btn.png"
-                          alt="btn"
-                          class="look__video-btn thanks__video-btn"
-                        />
-                        <p class="look__video-text">Смотреть видео</p>
-                      </div>
-                    </div>
+              <div class="thanks__social">
+                <div class="thanks__social-text">Отзывы клиентов:</div>
+                <div class="thanks__social-link">
+                  <a href="https://yandex.ru/maps/org/kotofeykin/29593005260/reviews/?ll=30.374540%2C59.978525&z=14" target="_blank">
+                    <img src="img/thanks/yandex.png" alt="vk">
+                  </a>
+                  <a href="https://www.google.com/maps/place/%D0%9A%D0%BE%D1%82%D0%BE%D1%84%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD+%7C+%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D1%81%D0%B0%D0%B4+%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D1%80%D0%B0%D0%B9%D0%BE%D0%BD+%7C+%D0%A6%D0%B5%D0%BD%D1%82%D1%80+%D1%80%D0%B0%D0%BD%D0%BD%D0%B5%D0%B3%D0%BE+%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8F,+%D1%8F%D1%81%D0%BB%D0%B8/@59.9783417,30.3727295,17z/data=!4m7!3m6!1s0x4696331f7ed5ba45:0xd98064eddb54955b!8m2!3d59.978339!4d30.3749182!9m1!1b1" target="_blank">
+                    <img src="img/thanks/google.png" alt="vk">
+                  </a>
+                  <a href="https://2gis.ru/spb/firm/70000001059376522" target="_blank">
+                    <img src="img/thanks/2gis.png" alt="vk">
+                  </a>
+                  <a href="https://spb.zoon.ru/education/detsky_sad_i_nachalnaya_semeinaya_shkola_kotofeikin/" target="_blank">
+                    <img src="img/thanks/zoon.png" alt="vk">
                   </a>
                 </div>
               </div>
             </div>
-				<div class="thanks__owner">
-					<img src="img/thanks/owner.png" alt="owner" class="owner-image">
-					<div class="owner-block">
-						<div class="owner-top">Евгений Смирнов</div>
-						<div class="owner-bottom">основатель компании</div>
-					</div>
-				</div>
-            <div class="thanks__subtitle">
-              Экспертные решения для вашего комфорта
+            <div class="thanks__bottom">
+              <div class="thanks__web">
+                <p>Главный сайт бренда:</p>
+                <a href="index.html"><img src="img/thanks/web.png" alt="web"></a>
+              </div>
+              <div class="thanks__bottom-text">Детский сад
+                с любовью и заботой!</div>
             </div>
-				
+            <div class="thanks__owner">
+              <img src="img/thanks/owner.png" alt="owner">
+              <div class="thanks__owner-box">
+                <div class="thanks__owner-inner">
+                  <div class="thanks__owner-name">Ольга Ромашкина,</div>
+                  <div class="thanks__owner-descr">руководитель компании</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -167,37 +128,38 @@
           <div class="footer__body">
             <div class="footer__left">
               <p class="footer__date">
-                «ГЛАВЭЛЕКТРИКА» ®, 2013-<span class="date-now">2022</span> г.
+                «Джунглики» ®, 2019-2022 г.<span class="date-now">2022</span> г.
               </p>
               <p class="footer__about">
-                ООО «ЭЛЕКТРИКА-ОПТ»,
-                <span>ИНН 434547338506</span>
+                ИП Ромашкина Ольга Анатольевна,
+                <span>ИНН 234900858668</span>
               </p>
               <div class="footer__place">
                 <div class="footer__place-img">
                   <img src="img/footer/flag.png" alt="flag" />
                 </div>
-                <p>Россия, Нижегородская область, г. Нижний Новгород</p>
+                <p>г. Санкт-Петербург</p>
               </div>
             </div>
             <div class="footer__middle">
               <img src="img/footer/logo.png" alt="logo" class="footer__logo" />
-              <p class="footer__made">Сделано в России 🤘</p>
+              
+              <p class="footer__made">Сделано в России 🤘⚪🟣🔴</p>
               <div class="footer__policy">
                 <span class="politicy">Политика конфиденциальности</span>
               </div>
             </div>
             <div class="footer__right">
-              <div class="footer__phone">
-                <div class="footer__phone-img">
-                  <img src="img/footer/phone.png" alt="phone" />
+              <div class="header__phone phone-block footer__phone">
+                <div class="phone-block__icon">
+                  <img src="img/header/phone.png" alt="icon" />
                 </div>
-                <div class="footer__phone-link">
-                  <div class="footer__phone-number">
-                    <a href="tel:+79200500089">+7 930 715 20 20</a>
+                <div class="phone-block__link">
+                  <div class="phone-block__number">
+                    <a href="tel:+79523702434">+7 (952) 370-24-34</a>
                   </div>
-                  <div class="footer__phone-order phone-block__order modal-phone">
-							<p>позвоните сейчас, чтобы не ждать звонка</p>
+                  <div class="phone-block__order modal-phone">
+                    <p>бесплатная консультация</p>
                   </div>
                 </div>
               </div>
@@ -508,9 +470,8 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-	 <script src="js/slick.min.js"></script>
     <script src="js/formprocessor.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/date.js"></script>
   </body>
