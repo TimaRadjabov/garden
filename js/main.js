@@ -480,24 +480,25 @@ if ($("#thanks2-body").length > 0) {
 
 $(".fourth__slider").slick({
   slidesToShow: 3,
-  sliderToScroll: 1,
   dots: true,
   infinity: true,
   centerMode: true,
   initialSlide: 2,
+  centerPadding: '0',
   autoplay: true,
-  autoplaySpeed: 2000,
-  speed: 1000,
+  speed: 300,
   variableWidth: true,
+  touchThreshold:100,
   responsive: [
     {
       breakpoint: 601,
       settings: {
         arrows: false,
+
       },
     },
   ],
-});
+},);
 
 // Tab
 /* const tabItemAdaptive = document.querySelectorAll(".fifth__tab");
@@ -683,13 +684,13 @@ document.addEventListener("DOMContentLoaded", () => {
             progress.style.width = 160 + "px";
           }
           if (input.value === int[7]) {
-            progress.style.width = 190 + "px";
+            progress.style.width = 180 + "px";
           }
           if (input.value === int[8]) {
-            progress.style.width = 220 + "px";
+            progress.style.width = 200 + "px";
           }
           if (input.value === int[9]) {
-            progress.style.width = 240 + "px";
+            progress.style.width = 230 + "px";
           }
         }
         if (arrs[0].matches) {
